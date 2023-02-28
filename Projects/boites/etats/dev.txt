@@ -1,0 +1,87 @@
+ mur1 = (200);
+        for (let i = 0; i < 10; i++) {
+            mur1 = (mur1 + 50);
+            this.mur = jeu.add.sprite(mur1, 400, 'bg1');
+            this.murGRP.add(this.mur);
+            this.mur.body.immovable = true;
+            this.mur.body.moves = false;
+            console.log(mur1 + (" MUR 1 (haut)"));
+        };
+        mur1 = (200);
+        for (let i = 0; i < 10; i++) {
+            mur1 = (mur1 + 50);
+            this.mur = jeu.add.sprite(mur1, 650, 'bg1');
+            this.murGRP.add(this.mur);
+            this.mur.body.immovable = true;
+            this.mur.body.moves = false;
+            console.log(mur1 + (" MUR 1 (bas)"));
+        };
+        mur2 = (500);
+        for (let i = 0; i < 2; i++) {
+            mur2 = (mur2 + 50);
+            this.mur = jeu.add.sprite(700, mur2, 'bg1');
+            this.murGRP.add(this.mur);
+            this.mur.body.immovable = true;
+            this.mur.body.moves = false;
+            console.log(mur2 + " MUR 2 (droite)");
+        };
+        mur2 = (400)
+        for (let i = 0; i < 4; i++) {
+            if (i === 2) {
+                mur2 = (mur2 + 50);
+            } else {
+                mur2 = (mur2 + 50);
+                this.mur = jeu.add.sprite(250, mur2, 'bg1');
+                this.murGRP.add(this.mur);
+                this.mur.body.immovable = true;
+                this.mur.body.moves = false;
+                console.log(mur2 + " MUR 2 (gauche)");
+            };
+        };
+
+        this.plate = jeu.add.sprite(300, 600, "switch");
+        this.swiGRP.add(this.plate);
+        this.plate.body.immovable = true;
+        this.plate.body.moves = false;
+
+        this.plate = jeu.add.sprite(300, 450, "switch");
+        this.swiGRP.add(this.plate);
+        this.plate.body.immovable = true;
+        this.plate.body.moves = false;
+
+        this.plate = jeu.add.sprite(650, 600, "switch");
+        this.swiGRP.add(this.plate);
+        this.plate.body.immovable = true;
+        this.plate.body.moves = false;
+        
+
+        for (let i = 0; i < 2; i++) {
+            this.boite = jeu.add.sprite(550, 600, "test")
+            this.boiteGRP.add(this.boite);
+            this.boite.body.immovable = false;
+            this.boite.body.moves = true;
+        };
+
+        for (let i = 0; i < 2; i++) {
+            this.boite = jeu.add.sprite(400, 600, "test")
+            this.boiteGRP.add(this.boite);
+            this.boite.body.immovable = false;
+            this.boite.body.moves = true;
+            this.boite.body.velocity.x = 0;
+            this.boite.body.velocity.y = 0;     
+        }
+            
+        for (let i = 0; i < 2; i++) {
+            this.boite = jeu.add.sprite(400, 450, "test")
+            this.boiteGRP.add(this.boite);
+            this.boite.body.immovable = false;
+            this.boite.body.moves = true;
+        };
+           
+            this.porte = jeu.add.sprite(700, 450, "door_test");
+            this.porteGRP.add(this.porte);
+            this.porte.body.immovable = true;
+            this.porte.body.allowGravity = false; 
+            
+            this.porteouvert = jeu.add.sprite(700, 450, "door_test_2");
+            this.porteouvertGRP.add(this.porteouvert);

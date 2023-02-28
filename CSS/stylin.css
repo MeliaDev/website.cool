@@ -1,0 +1,140 @@
+body{
+	font-family:"Calibri", "Times New Roman", "Times", "Sans-Serif";
+	margin:0em;
+}
+
+header{
+	text-align:center;
+}
+
+
+img.header{
+	height:163px;
+	width:250px;
+	margin-bottom:5px;
+	margin-top:7px;
+	display:inline-block;
+}
+
+nav{
+	text-align:center;
+}
+
+nav > a{
+	padding:10px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+	border:outset;
+	text-decoration:none;
+	height:15px;
+	width:auto;
+	color:#FFFFFF;
+	background-color:black;
+	display:inline-flex;
+}
+
+nav > a:hover{
+	border:inset;
+}
+
+p{
+	color:#FFFFFF;
+	text-align:center;
+}
+
+div.main {
+	width:40%; 
+	height:auto;
+	border:outset;
+	color:#FFFFFF;
+	text-align:center;
+	background-color:black;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+
+}
+
+img.icon{
+	width:32px;
+	height:32px;
+	margin-right:2px;
+	margin-left:2px;
+}
+
+footer{
+	position: fixed;
+    bottom: 0;
+	text-align:center;
+	width:100%;
+}
+
+body.main{
+	width:100%;
+	text-align:center;
+	font-family:"Calibri", "Times New Roman", "Times", "Sans-Serif";
+}
+
+a.hb{
+	padding:10px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+	border:outset #00FFFF;
+	text-decoration:none;
+	text-align:center;
+	height:15px;
+	width:auto;
+	color:#FFFFFF;
+	background-color:#BDBDBD;
+	display:inline-flex;
+	font-size:16px;
+}
+
+a.hb:hover{
+	border:inset #00FFFF;
+}
+
+.pleasehelpme{
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	background-color:#BDBDBD;
+	color:black;
+	border:3px solid #00FFFF;
+	border-radius:5px;
+	text-align:center;
+	display:inline-block;
+}
+
+div.qrcont{
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	height:300px;
+	background-color:#BDBDBD;
+	color:black;
+	border-radius:5px;
+	text-align:center;
+	display:inline-block;
+	font-size:2em;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background:#000 url('../hbshit/img/hbpage.webp');
+}
+
+  .page:target {
+    left: 0vw;
+    z-index: 1;
+}
