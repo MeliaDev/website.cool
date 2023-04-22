@@ -134,6 +134,22 @@ div.qrcont{
     background:#000 url('../hbshit/img/hbpage.webp');
 }
 
+.pagemain {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background:#000 url('../Images/webbg.jpg');
+}
+
+.pagemain:target {
+    left: 0vw;
+    z-index: 1;
+}
+
   .page:target {
     left: 0vw;
     z-index: 1;
